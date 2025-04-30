@@ -19,14 +19,16 @@ function displayPokemon(pokemon){
     console.log(pokemon)
     pokemonCard.innerHTML = `
         <img src="${pokemon.sprites.front_shiny}" alt="imagen de ${pokemon.name}">
-        <h3>${pokemon.name} </h3>
-        <h2>${pokemon.id} </h2>
+        <h3>Nombre: ${pokemon.name} </h3>
+        <h2>Id: ${pokemon.id} </h2>
 `
     pokemonList.appendChild(pokemonCard)
 }
 
 async function loadPokedex(){
-    const pokemon = await fetchPokemonData(4)
+    for (let i=1;i<=50; i++){
+        const pokemon = await fetchPokemonData(i)
     displayPokemon(pokemon)
+}
 }
 loadPokedex()
