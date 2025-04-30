@@ -13,6 +13,14 @@ h1 {
     font-size: 40px;
 }
 
+button {
+    background-color: rgb(75, 76, 75);
+    padding: 20px;
+    color: #ffffff;
+    font-size: 20px;
+
+}
+
 .pokedex-container{
     border: 1px solid rgb(153, 153, 153);
     border-radius: 8px;
@@ -31,13 +39,31 @@ h1 {
     text-align: center;
 }
 .pokemon-card {
-    border: 2px solid #b9b9b9;
-    box-shadow: 4px 4px 4px 1px #707070;
+    border: 2px solid #666666;
+    box-shadow: 4px 2px 4px 2px #707070;
     background-color: white;
     border-radius: 500px;
     margin: 10%;
     padding: 50px 20px 20px 20px;
     text-align: center;
+    font-size: 15px;
+}
+
+#pokemonDetail {
+    display: flex;
+    flex-direction: column;
+}
+/* 
+#pokemonInfo {
+    font-size: 22px;
+} */
+
+.grass{
+    border: 2px solid green;
+}
+
+.fire{
+    border: 2px solid rgb(128, 32, 0);
 }
 
 @media (width <500px){
